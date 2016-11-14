@@ -1,0 +1,43 @@
+/*
+*this is my first time to edit code in sass!!
+*so will has much problems!
+ */
+.box {
+  background: red;
+  width: 200px;
+  height: 200px; }
+
+.box1 .box2 {
+  background: #368eff;
+  width: 100px;
+  height: 100px;
+  color: #fff; }
+
+.box .box1 {
+  width: 15px;
+  height: 100px; }
+  .box .box1 .box2 {
+    padding: 5px; }
+
+.box1 {
+  color: #1875e7; }
+
+.box2:hover {
+  color: #bdbdbd; }
+
+.box {
+  border-left-radius: 5px; }
+
+.box {
+  margin: 7px;
+  top: 150px;
+  right: 20%; }
+
+.box2 {
+  font-size: 16px; }
+
+.box2 {
+  float: left;
+  margin-left: 10px; }
+
+/*# sourceMappingURL=firstscss.css.map */

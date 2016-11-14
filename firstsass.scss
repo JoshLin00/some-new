@@ -1,0 +1,79 @@
+@charset "utf-8";
+/*
+*this is my first time to edit code in sass!!
+*so will has much problems!
+ */
+.box {
+        background: red;
+        width: 200px;
+        height: 200px;
+} 
+//嵌套
+.box1 {
+        .box2{ 
+              background: #368eff;
+              width: 100px;
+              height: 100px;
+              color: #fff;
+        }    
+}
+.box  .box1 {
+        width:15px;
+        height:100px;
+            .box2{
+                padding: 5px;
+            }     
+}
+//变量、计算公式
+$blue: #1875e7;
+.box1 {
+        color: $blue ;
+}
+//引用
+.box2 {
+      &:hover{
+        color: #bdbdbd;
+      }
+}
+
+$side : left;
+$var : 2;
+.box { border-#{$side}-radius:5px;}
+.box {
+        margin: (14px/2);
+        top: 50px + 100px;
+        right: $var * 10%;
+}
+//属性嵌套
+.box2 {
+       font: {
+           size: 16px;
+       }
+}
+//继承
+// .box2 {
+//        @extend  .box; 
+// }
+//重用代码块
+@mixin left {
+        float: left;
+        margin-left: 10px;
+}
+.box2 {
+        @include left;
+}
+// @mixin left($value: 10px) {
+//         float: left;
+//         margin-left: 10px;
+// }
+// .box1 {
+//         @include left(20px);
+// }
+// @mixin rounded($vert,$horz,$radius:10px) {
+//         border-#{$vert}-#{$horz}-radius:$radius;
+//         -moz-border-radius-#{$vert}-#{$horz}:$radius;
+//         -webkit-border-#{$vert}-#{$horz}-radius:$radius;
+// }
+// #navbar li { @include rounded(top, left); }
+// #footer { @include rounded(top, left, 5px); }
+
